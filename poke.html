@@ -1,0 +1,41 @@
+<html>
+    <script src = "./poke.js"></script>
+    <!-- <script src = "jquery-3.4.1.min.js"></script> -->
+    <body>
+        <h1 style="text-align: center;">POKEDEX</h1>
+        <form align = "center" method="POST">
+            <input type = "text" placeholder = "Search for a Pokemon" name ="search" id = "pokemon">
+            <button type="button" onclick= "getPokemonName()" >Submit</button>
+        </form>
+
+        <h1 id = "name" style= "font-weight: lighter; text-align: center; text-transform: capitalize;">Pokemon</h1>
+        <table align="center"><tr><td><div id = "image"></div></td></tr></table>
+        <table border="1px" align="center">
+            <thead><tr><td>Attributes</td></tr></thead>
+            <tbody>
+                <tr><td>Height</td><td id = "height"></td></tr>
+                <tr><td>Weight</td><td id = "weight"></td></tr>
+                <tr><td>Type</td><td id = "type" style="text-transform: capitalize;"></td></tr>
+            </tbody>
+        </table>
+        <br>
+            <table border="1px" align="center" style="font-size: large; width: 25%; display: inline-table;">
+                
+                <tbody>
+                    <td><b>Click an attack to learn more!</b></td>
+                    <tr><td><div id="attack_buttons" style="color: crimson;"></div></td></tr>
+                </tbody>
+            </table>
+            <table border = "1px" style="float: right;">
+                <tbody>
+                    <tr><td ><b > Attack details</b></td></tr>
+                    <tr><td>Attack name:</td><td id = "attack_name"></td></tr>
+                    <tr><td>Flavor text:</td><td id = "flavor_text"></td></tr>
+                    <tr><td>Accuracy</td><td id = "accuracy"></td></tr>
+                    <tr><td>PP</td><td id = "pp"></td></tr>
+                    <tr><td>Power</td><td id = "power"></td></tr>
+                    <tr><td>Type</td><td id ="attack_type"></td></tr>
+                </tbody>
+            </table>
+    </body>
+</html>
